@@ -1,6 +1,6 @@
 let todo = [];
 
-let req = prompt("please enter your request");
+let req = prompt("please enter your request : ");
 
 while(true){
     if(req == "quit"){
@@ -28,5 +28,5 @@ while(true){
     else{
         console.log("wrong request ");
     }
-    req = prompt("please enter your request");
+    req = prompt("please enter your request : ");
 }
