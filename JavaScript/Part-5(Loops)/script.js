@@ -80,20 +80,23 @@ while(i1<=5){
     i1++;
 }
 
-//loops with arrays
-console.log("loops with array example : ");
-let fruits = ["mango" , "apple" , "banana" , "litchi" , "orange"];
-for(let i=0;i<fruits.length;i++){
-    console.log(i , fruits[i]);
+
+//for of loop
+let fruits = [ "mango" , "apple" , "banana" , "litchi" , "orange"];
+for(fruit of fruits){
+    console.log(fruit);
 }
 
-//nested loops with nested arrays
+for(char of "apnacollege"){
+    console.log(char);
+}
+
+//nested for of loop
 let heroes = [ ["ironman", "spiderman" , "thor"] ,
              ["superman", "wonder women" , "flash"]
             ];
-for(let i=0;i<heroes.length;i++){
-    console.log(i , heroes[i]);
-    for(let j=0;j<heroes[i].length;j++){
-        console.log(`j=${j}, ${heroes[i][j]}`);
+for(list of heroes){
+    for(hero of list){
+        console.log(hero);
     }
 }
