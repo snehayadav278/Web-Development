@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Cart | Women's Fashion</title>
+
+  <!-- Google Fonts (Luxury Look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar">
+    <p>Free Shipping on Orders Above ₹2999</p>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Modern. Feminine. Timeless.</h1>
+      <p>Discover elegant styles inspired by Forever New</p>
+      <a href="new-collection.html" class="btn">Shop New Collection</a>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORY SECTION ===== -->
+  <section class="home-categories">
+    <h2>Shop by Category</h2>
+
+    <div class="category-grid">
+      <a href="dresses.html" class="category-box">Dresses</a>
+      <a href="topwear.html" class="category-box">Topwear</a>
+      <a href="jeans.html" class="category-box">Jeans</a>
+      <a href="co-ords.html" class="category-box">Co-ords</a>
+      <a href="bags.html" class="category-box">Bags</a>
+      <a href="footwear.html" class="category-box">Footwear</a>
+      <a href="accessories.html" class="category-box">Accessories</a>
+      <a href="sale.html" class="category-box sale-box">Sale</a>
+    </div>
+  </section>
+
+  <!-- ===== NEW ARRIVALS ===== -->
+  <section class="new-arrivals">
+    <h2>Trending Now</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/p1.webp" alt="Dress" />
+        <h3>Floral Maxi Dress</h3>
+        <p>₹5,999</p>
+        <button onclick="addToCart('Floral Maxi Dress',5999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/p2.webp" alt="Top" />
+        <h3>Satin Party Top</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Satin Party Top',3499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/p3.webp" alt="Jeans" />
+        <h3>High Waist Jeans</h3>
+        <p>₹4,299</p>
+        <button onclick="addToCart('High Waist Jeans',4299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/p4.webp" alt="Bag" />
+        <h3>Structured Handbag</h3>
+        <p>₹2,999</p>
+        <button onclick="addToCart('Structured Handbag',2999)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+   
+  <!-- TESTIMONIALS -->
+<h2 class="section-title">What Our Customers Say</h2>
+<div class="testimonials">
+<div class="testimonial">
+<img src="images/photo3.avif" />
+<h3>Riya Sharma</h3>
+<p>"Amazing quality! Clothing collection is super trendy ❤️"</p>
+</div>
+<div class="testimonial">
+<img src="images/photo1.jpg" />
+<h3>Pooja Verma</h3>
+<p>"Loved the jewellery! Fast delivery and great packaging ✨"</p>
+</div>
+<div class="testimonial">
+<img src="images/photo2.jpeg" />
+<h3>Simran Kaur</h3>
+<p>“Absolutely love the elegant designs! The website is easy to navigate and the quality looks premium. Definitely coming back again 💖”</p>
+</div>
+</div>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 FashionCart. All Rights Reserved.</p>
+      <p>Mini Project | B.Tech CSE</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

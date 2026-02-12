@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Page specific styling */
+    .auth-container {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .auth-box {
+      width: 350px;
+      border: 1px solid #eee;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .auth-box h2 {
+      margin-bottom: 20px;
+    }
+
+    .auth-box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .auth-box button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+      margin-bottom: 15px;
+    }
+
+    .auth-box p {
+      font-size: 14px;
+    }
+
+    .auth-box a {
+      color: #000;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== LOGIN FORM ===== -->
+  <section class="auth-container">
+    <div class="auth-box">
+      <h2>Login</h2>
+
+      <input type="email" id="login-email" placeholder="Email" />
+      <input type="password" id="login-password" placeholder="Password" />
+
+      <button onclick="login()">Login</button>
+
+      <p>New here? <a href="#" onclick="showSignup()">Create an account</a></p>
+    </div>
+  </section>
+
+  <!-- ===== SIGNUP FORM (HIDDEN) ===== -->
+  <section class="auth-container" id="signup-section" style="display:none;">
+    <div class="auth-box">
+      <h2>Sign Up</h2>
+
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="password" id="signup-password" placeholder="Password" />
+
+      <button onclick="signup()">Sign Up</button>
+
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+
+  <script>
+    function showSignup() {
+      document.querySelector('.auth-container').style.display = 'none';
+      document.getElementById('signup-section').style.display = 'flex';
+    }
+
+    function showLogin() {
+      document.getElementById('signup-section').style.display = 'none';
+      document.querySelector('.auth-container').style.display = 'flex';
+    }
+  </script>
+</body>
+</html>

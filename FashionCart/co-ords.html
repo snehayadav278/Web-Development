@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Co-ords | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html" class="active">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Co-ords</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/coord1.webp" alt="Co-ord">
+        <h3>Beige Linen Co-ord Set</h3>
+        <p>₹6,499</p>
+        <button onclick="addToCart('Beige Linen Co-ord Set',6499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord2.webp" alt="Co-ord">
+        <h3>Pastel Blazer Co-ord</h3>
+        <p>₹7,299</p>
+        <button onclick="addToCart('Pastel Blazer Co-ord',7299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord3.webp" alt="Co-ord">
+        <h3>Floral Printed Co-ord</h3>
+        <p>₹5,999</p>
+        <button onclick="addToCart('Floral Printed Co-ord',5999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord4.jpg" alt="Co-ord">
+        <h3>White Shirt & Shorts Set</h3>
+        <p>₹4,999</p>
+        <button onclick="addToCart('White Shirt & Shorts Set',4999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord5.webp" alt="Co-ord">
+        <h3>Monochrome Knit Co-ord</h3>
+        <p>₹5,499</p>
+        <button onclick="addToCart('Monochrome Knit Co-ord',5499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord6.webp" alt="Co-ord">
+        <h3>Satin Lounge Co-ord</h3>
+        <p>₹6,899</p>
+        <button onclick="addToCart('Satin Lounge Co-ord',6899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord7.webp" alt="Co-ord">
+        <h3>Striped Summer Co-ord</h3>
+        <p>₹4,799</p>
+        <button onclick="addToCart('Striped Summer Co-ord',4799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord8.webp" alt="Co-ord">
+        <h3>Minimal Black Co-ord</h3>
+        <p>₹6,299</p>
+        <button onclick="addToCart('Minimal Black Co-ord',6299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord9.webp" alt="Co-ord">
+        <h3>Pastel Lounge Co-ord</h3>
+        <p>₹5,199</p>
+        <button onclick="addToCart('Pastel Lounge Co-ord',5199)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord10.webp" alt="Co-ord">
+        <h3>Denim Shirt Co-ord</h3>
+        <p>₹6,799</p>
+        <button onclick="addToCart('Denim Shirt Co-ord',6799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord11.webp" alt="Co-ord">
+        <h3>Tailored Workwear Co-ord</h3>
+        <p>₹7,999</p>
+        <button onclick="addToCart('Tailored Workwear Co-ord',7999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord12.webp" alt="Co-ord">
+        <h3>Printed Vacation Co-ord</h3>
+        <p>₹5,699</p>
+        <button onclick="addToCart('Printed Vacation Co-ord',5699)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord13.webp" alt="Co-ord">
+        <h3>Neutral Cotton Co-ord</h3>
+        <p>₹4,499</p>
+        <button onclick="addToCart('Neutral Cotton Co-ord',4499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord14.webp" alt="Co-ord">
+        <h3>Elegant Evening Co-ord</h3>
+        <p>₹8,499</p>
+        <button onclick="addToCart('Elegant Evening Co-ord',8499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord15.webp" alt="Co-ord">
+        <h3>Relaxed Fit Travel Co-ord</h3>
+        <p>₹5,299</p>
+        <button onclick="addToCart('Relaxed Fit Travel Co-ord',5299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/coord16.webp" alt="Co-ord">
+        <h3>Soft Pastel Co-ord Set</h3>
+        <p>₹5,899</p>
+        <button onclick="addToCart('Soft Pastel Co-ord Set',5899)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

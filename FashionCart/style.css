@@ -1,0 +1,411 @@
+/* =====================
+   GLOBAL STYLES
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* =====================
+   TOP BAR
+===================== */
+.top-bar {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px 0;
+  letter-spacing: 1px;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.nav-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo a {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 22px;
+}
+
+.nav-menu a {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #333;
+  position: relative;
+}
+
+.nav-menu a::after {
+  content: '';
+  width: 0;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+.sale {
+  color: #c0392b;
+  font-weight: 500;
+}
+
+.nav-actions a {
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+/* =====================
+   HERO SECTION
+===================== */
+.hero {
+  height: 85vh;
+  background: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color:black;
+}
+
+.hero-text h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border: 1px solid black;
+  color:black;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: rgb(228, 224, 229);
+  color: #000;
+}
+
+/* =====================
+   CATEGORY SECTION
+===================== */
+.home-categories {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.home-categories h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.category-box {
+  border: 1px solid #eee;
+  padding: 40px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+.category-box:hover {
+  background: #d2cdd4;
+}
+
+.sale-box {
+  color: #c0392b;
+}
+
+/* =====================
+   PRODUCTS
+===================== */
+.new-arrivals {
+  padding: 80px 20px;
+}
+
+.new-arrivals h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 8px 20px;
+  border: 1px solid #000;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  border-top: 1px solid #eee;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 992px) {
+  .category-grid,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .category-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* =====================
+   PRODUCT HOVER EFFECTS
+===================== */
+
+/* Card lift effect */
+.product-card {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image zoom on hover */
+.product-card img {
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.06);
+}
+
+/* Button hover already exists, enhancing it */
+.product-card button {
+  transition: all 0.3s ease;
+}
+
+.product-card button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* --------------------------- TESTIMONIALS --------------------------- */
+.section-title {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 0 40px 40px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform .3s, box-shadow .3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(161, 94, 255, 0.35);
+}
+
+.testimonial img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    border: 3px solid #c084fc;
+    transition: transform .3s;
+}
+
+.testimonial:hover img {
+    transform: scale(1.15);
+}
+
+.testimonial h3 {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #a855f7;
+    font-weight: 600;
+}
+
+.testimonial p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* TABLET */
+@media (max-width: 992px) {
+  .nav-menu {
+    justify-content: center;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-actions {
+    margin-top: 10px;
+  }
+
+  .product-card img {
+    height: 220px;
+    object-fit: cover;
+  }
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dresses | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html" class="active">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Dresses</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/dress1.webp" alt="Dress">
+        <h3>Floral Midi Dress</h3>
+        <p>₹5,499</p>
+        <button onclick="addToCart('Floral Midi Dress',5499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress2.webp" alt="Dress">
+        <h3>Elegant Black Bodycon</h3>
+        <p>₹6,299</p>
+        <button onclick="addToCart('Elegant Black Bodycon',6299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress3.webp" alt="Dress">
+        <h3>Pastel Wrap Dress</h3>
+        <p>₹4,999</p>
+        <button onclick="addToCart('Pastel Wrap Dress',4999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress4.webp" alt="Dress">
+        <h3>Classic A-Line Dress</h3>
+        <p>₹5,899</p>
+        <button onclick="addToCart('Classic A-Line Dress',5899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress5.webp" alt="Dress">
+        <h3>Summer Cotton Dress</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('Summer Cotton Dress',3999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress6.webp" alt="Dress">
+        <h3>Satin Evening Dress</h3>
+        <p>₹7,499</p>
+        <button onclick="addToCart('Satin Evening Dress',7499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress7.webp" alt="Dress">
+        <h3>Polka Dot Skater Dress</h3>
+        <p>₹4,599</p>
+        <button onclick="addToCart('Polka Dot Skater Dress',4599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress8.webp" alt="Dress">
+        <h3>Off-Shoulder Party Dress</h3>
+        <p>₹6,999</p>
+        <button onclick="addToCart('Off-Shoulder Party Dress',6999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress9.webp" alt="Dress">
+        <h3>Tiered Maxi Dress</h3>
+        <p>₹5,299</p>
+        <button onclick="addToCart('Tiered Maxi Dress',5299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress10.webp" alt="Dress">
+        <h3>Minimal White Shirt Dress</h3>
+        <p>₹4,799</p>
+        <button onclick="addToCart('Minimal White Shirt Dress',4799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress11.webp" alt="Dress">
+        <h3>Ruched Satin Mini Dress</h3>
+        <p>₹5,999</p>
+        <button onclick="addToCart('Ruched Satin Mini Dress',5999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress12.webp" alt="Dress">
+        <h3>Flared Evening Gown</h3>
+        <p>₹8,999</p>
+        <button onclick="addToCart('Flared Evening Gown',8999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress13.webp" alt="Dress">
+        <h3>Casual Denim Dress</h3>
+        <p>₹4,299</p>
+        <button onclick="addToCart('Casual Denim Dress',4299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress14.webp" alt="Dress">
+        <h3>Ruffle Detail Midi Dress</h3>
+        <p>₹5,699</p>
+        <button onclick="addToCart('Ruffle Detail Midi Dress',5699)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress15.webp" alt="Dress">
+        <h3>Elegant Wine Maxi Dress</h3>
+        <p>₹7,999</p>
+        <button onclick="addToCart('Elegant Wine Maxi Dress',7999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/dress16.webp" alt="Dress">
+        <h3>Soft Pastel Day Dress</h3>
+        <p>₹4,599</p>
+        <button onclick="addToCart('Soft Pastel Day Dress',4599)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bags | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html" class="active">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Bags</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/bag1.webp" alt="Bag">
+        <h3>Classic Tote Bag</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('Classic Tote Bag',3999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag2.webp" alt="Bag">
+        <h3>Mini Crossbody Bag</h3>
+        <p>₹2,899</p>
+        <button onclick="addToCart('Mini Crossbody Bag',2899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag3.webp" alt="Bag">
+        <h3>Structured Shoulder Bag</h3>
+        <p>₹4,499</p>
+        <button onclick="addToCart('Structured Shoulder Bag',4499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag4.webp" alt="Bag">
+        <h3>Pastel Handbag</h3>
+        <p>₹3,599</p>
+        <button onclick="addToCart('Pastel Handbag',3599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag5.webp" alt="Bag">
+        <h3>Leather Sling Bag</h3>
+        <p>₹5,199</p>
+        <button onclick="addToCart('Leather Sling Bag',5199)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag6.webp" alt="Bag">
+        <h3>Canvas Tote</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Canvas Tote',2499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag7.webp" alt="Bag">
+        <h3>Bucket Bag</h3>
+        <p>₹3,899</p>
+        <button onclick="addToCart('Bucket Bag',3899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag8.webp" alt="Bag">
+        <h3>Chain Strap Clutch</h3>
+        <p>₹3,299</p>
+        <button onclick="addToCart('Chain Strap Clutch',3299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag9.webp" alt="Bag">
+        <h3>Travel Backpack</h3>
+        <p>₹5,599</p>
+        <button onclick="addToCart('Travel Backpack',5599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag10.webp" alt="Bag">
+        <h3>Woven Handbag</h3>
+        <p>₹4,199</p>
+        <button onclick="addToCart('Woven Handbag',4199)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag11.webp" alt="Bag">
+        <h3>Structured Mini Bag</h3>
+        <p>₹3,799</p>
+        <button onclick="addToCart('Structured Mini Bag',3799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag12.webp" alt="Bag">
+        <h3>Pastel Crossbody</h3>
+        <p>₹3,299</p>
+        <button onclick="addToCart('Pastel Crossbody',3299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag13.webp" alt="Bag">
+        <h3>Classic Leather Tote</h3>
+        <p>₹5,499</p>
+        <button onclick="addToCart('Classic Leather Tote',5499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag14.webp" alt="Bag">
+        <h3>Minimal Satchel Bag</h3>
+        <p>₹4,299</p>
+        <button onclick="addToCart('Minimal Satchel Bag',4299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag15.webp" alt="Bag">
+        <h3>Elegant Shoulder Tote</h3>
+        <p>₹5,799</p>
+        <button onclick="addToCart('Elegant Shoulder Tote',5799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bag16.webp" alt="Bag">
+        <h3>Soft Pastel Handbag</h3>
+        <p>₹4,599</p>
+        <button onclick="addToCart('Soft Pastel Handbag',4599)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

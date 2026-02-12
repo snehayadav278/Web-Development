@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New In | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html" class="active">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>New In</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (9 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/new1.webp" alt="New Product">
+        <h3>Pastel Ruffle Dress</h3>
+        <p>₹3,299</p>
+        <button onclick="addToCart('Pastel Ruffle Dress',3299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new2.webp" alt="New Product">
+        <h3>Summer Linen Top</h3>
+        <p>₹2,599</p>
+        <button onclick="addToCart('Summer Linen Top',2599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new3.webp" alt="New Product">
+        <h3>Floral Midi Skirt</h3>
+        <p>₹3,199</p>
+        <button onclick="addToCart('Floral Midi Skirt',3199)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new4.webp" alt="New Product">
+        <h3>Satin Wrap Top</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Satin Wrap Top',3499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new5.webp" alt="New Product">
+        <h3>Casual Cotton Top</h3>
+        <p>₹1,999</p>
+        <button onclick="addToCart('Casual Cotton Top',1999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new6.webp" alt="New Product">
+        <h3>Bow Neck Blouse</h3>
+        <p>₹3,899</p>
+        <button onclick="addToCart('Bow Neck Blouse',3899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new7.webp" alt="New Product">
+        <h3>Soft Pastel Shirt</h3>
+        <p>₹2,999</p>
+        <button onclick="addToCart('Soft Pastel Shirt',2999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/new8.webp" alt="New Product">
+        <h3>Elegant Peplum Top</h3>
+        <p>₹3,199</p>
+        <button onclick="addToCart('Elegant Peplum Top',3199)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sale | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="active sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Sale</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS WITH DISCOUNT) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/sale1.webp" alt="Product">
+        <h3>Classic White Blouse</h3>
+        <p>₹2,999 <span class="discount">10% Off</span> <span class="new-price">₹2,699</span></p>
+        <button onclick="addToCart('Classic White Blouse',2699)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/sale2.webp" alt="Product">
+        <h3>Satin Wrap Top</h3>
+        <p>₹3,499 <span class="discount">15% Off</span> <span class="new-price">₹2,974</span></p>
+        <button onclick="addToCart('Satin Wrap Top',2974)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/sale3.webp" alt="Product">
+        <h3>Floral Print Top</h3>
+        <p>₹2,699 <span class="discount">20% Off</span> <span class="new-price">₹2,159</span></p>
+        <button onclick="addToCart('Floral Print Top',2159)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/sale4.webp" alt="Product">
+        <h3>Elegant Peplum Top</h3>
+        <p>₹3,199 <span class="discount">25% Off</span> <span class="new-price">₹2,399</span></p>
+        <button onclick="addToCart('Elegant Peplum Top',2399)">Add to Cart</button>
+      </div>
+
+      <!-- Add 12 more products in similar format -->
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

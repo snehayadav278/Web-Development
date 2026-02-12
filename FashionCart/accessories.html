@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessories | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html" class="active">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Accessories</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/accessory1.webp" alt="Accessory">
+        <h3>Gold Hoop Earrings</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart('Gold Hoop Earrings',1299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory2.webp" alt="Accessory">
+        <h3>Pearl Necklace</h3>
+        <p>₹2,499</p>
+        <button onclick="addToCart('Pearl Necklace',2499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory3.webp" alt="Accessory">
+        <h3>Silk Scarf</h3>
+        <p>₹899</p>
+        <button onclick="addToCart('Silk Scarf',899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory4.webp" alt="Accessory">
+        <h3>Statement Ring</h3>
+        <p>₹1,599</p>
+        <button onclick="addToCart('Statement Ring',1599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory5.jpg" alt="Accessory">
+        <h3>Leather Belt</h3>
+        <p>₹1,799</p>
+        <button onclick="addToCart('Leather Belt',1799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory6.webp" alt="Accessory">
+        <h3>Charm Bracelet</h3>
+        <p>₹1,299</p>
+        <button onclick="addToCart('Charm Bracelet',1299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory7.webp" alt="Accessory">
+        <h3>Minimalist Watch</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Minimalist Watch',3499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory8.webp" alt="Accessory">
+        <h3>Stacked Bangles</h3>
+        <p>₹999</p>
+        <button onclick="addToCart('Stacked Bangles',999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory9.webp" alt="Accessory">
+        <h3>Hair Clip Set</h3>
+        <p>₹699</p>
+        <button onclick="addToCart('Hair Clip Set',699)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory10.webp" alt="Accessory">
+        <h3>Choker Necklace</h3>
+        <p>₹1,099</p>
+        <button onclick="addToCart('Choker Necklace',1099)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory11.webp" alt="Accessory">
+        <h3>Stud Earrings Set</h3>
+        <p>₹899</p>
+        <button onclick="addToCart('Stud Earrings Set',899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory12.jpeg" alt="Accessory">
+        <h3>Leather Keychain</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Leather Keychain',499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory13.webp" alt="Accessory">
+        <h3>Gold Cuff Bracelet</h3>
+        <p>₹1,899</p>
+        <button onclick="addToCart('Gold Cuff Bracelet',1899)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory14.webp" alt="Accessory">
+        <h3>Silk Headband</h3>
+        <p>₹699</p>
+        <button onclick="addToCart('Silk Headband',699)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory15.webp" alt="Accessory">
+        <h3>Layered Necklace Set</h3>
+        <p>₹2,099</p>
+        <button onclick="addToCart('Layered Necklace Set',2099)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/accessory16.jpg" alt="Accessory">
+        <h3>Pastel Hair Scrunchies</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Pastel Hair Scrunchies',499)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

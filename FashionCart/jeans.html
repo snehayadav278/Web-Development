@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeans | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html" class="active">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Jeans</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="images/jeans1.webp" alt="Jeans">
+        <h3>High Rise Skinny Jeans</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('High Rise Skinny Jeans',3999)">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="images/jeans2.webp" alt="Jeans">
+        <h3>Classic Blue Straight Jeans</h3>
+        <p>₹4,299</p>
+        <button onclick="addToCart('Classic Blue Straight Jeans',4299)">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="images/jeans3.webp" alt="Jeans">
+        <h3>Dark Wash Slim Fit Jeans</h3>
+        <p>₹3,799</p>
+        <button onclick="addToCart('Dark Wash Slim Fit Jeans',3799)">Add to Cart</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="images/jeans4.webp" alt="Jeans">
+        <h3>Wide Leg Denim Jeans</h3>
+        <p>₹4,999</p>
+        <button onclick="addToCart('Wide Leg Denim Jeans',4999)">Add to Cart</button>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="images/jeans5.webp" alt="Jeans">
+        <h3>Light Blue Mom Jeans</h3>
+        <p>₹3,599</p>
+        <button onclick="addToCart('Light Blue Mom Jeans',3599)">Add to Cart</button>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="product-card">
+        <img src="images/jeans6.webp" alt="Jeans">
+        <h3>Black Ankle Length Jeans</h3>
+        <p>₹3,299</p>
+        <button onclick="addToCart('Black Ankle Length Jeans',3299)">Add to Cart</button>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="product-card">
+        <img src="images/jeans7.webp" alt="Jeans">
+        <h3>Grey Stretch Denim</h3>
+        <p>₹3,899</p>
+        <button onclick="addToCart('Grey Stretch Denim',3899)">Add to Cart</button>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="product-card">
+        <img src="images/jeans8.webp" alt="Jeans">
+        <h3>Vintage Wash Jeans</h3>
+        <p>₹4,199</p>
+        <button onclick="addToCart('Vintage Wash Jeans',4199)">Add to Cart</button>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="product-card">
+        <img src="images/jeans9.webp" alt="Jeans">
+        <h3>High Waist Flared Jeans</h3>
+        <p>₹5,299</p>
+        <button onclick="addToCart('High Waist Flared Jeans',5299)">Add to Cart</button>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="product-card">
+        <img src="images/jeans10.webp" alt="Jeans">
+        <h3>Classic Indigo Denim</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('Classic Indigo Denim',3999)">Add to Cart</button>
+      </div>
+
+      <!-- Product 11 -->
+      <div class="product-card">
+        <img src="images/jeans11.webp" alt="Jeans">
+        <h3>Distressed Skinny Jeans</h3>
+        <p>₹4,499</p>
+        <button onclick="addToCart('Distressed Skinny Jeans',4499)">Add to Cart</button>
+      </div>
+
+      <!-- Product 12 -->
+      <div class="product-card">
+        <img src="images/jeans12.webp" alt="Jeans">
+        <h3>Comfort Fit Stretch Jeans</h3>
+        <p>₹3,699</p>
+        <button onclick="addToCart('Comfort Fit Stretch Jeans',3699)">Add to Cart</button>
+      </div>
+
+      <!-- Product 13 -->
+      <div class="product-card">
+        <img src="images/jeans13.webp" alt="Jeans">
+        <h3>Paperbag Waist Jeans</h3>
+        <p>₹4,799</p>
+        <button onclick="addToCart('Paperbag Waist Jeans',4799)">Add to Cart</button>
+      </div>
+
+      <!-- Product 14 -->
+      <div class="product-card">
+        <img src="images/jeans14.webp" alt="Jeans">
+        <h3>Bootcut Denim Jeans</h3>
+        <p>₹4,199</p>
+        <button onclick="addToCart('Bootcut Denim Jeans',4199)">Add to Cart</button>
+      </div>
+
+      <!-- Product 15 -->
+      <div class="product-card">
+        <img src="images/jeans15.webp" alt="Jeans">
+        <h3>Soft Stretch Casual Jeans</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Soft Stretch Casual Jeans',3499)">Add to Cart</button>
+      </div>
+
+      <!-- Product 16 -->
+      <div class="product-card">
+        <img src="images/jeans16.webp" alt="Jeans">
+        <h3>Premium Dark Blue Jeans</h3>
+        <p>₹5,599</p>
+        <button onclick="addToCart('Premium Dark Blue Jeans',5599)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>

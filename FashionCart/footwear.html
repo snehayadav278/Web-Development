@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footwear | FashionCart</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-wrapper">
+      <div class="logo">
+        <a href="index.html">FashionCart</a>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="new-collection.html">New In</a>
+        <a href="topwear.html">Topwear</a>
+        <a href="jeans.html">Jeans</a>
+        <a href="dresses.html">Dresses</a>
+        <a href="co-ords.html">Co-ords</a>
+        <a href="bags.html">Bags</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="footwear.html" class="active">Footwear</a>
+        <a href="sale.html" class="sale">Sale</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="login.html">Login</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== PAGE TITLE ===== -->
+  <section class="home-categories">
+    <h2>Footwear</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID (16 PRODUCTS) ===== -->
+  <section class="new-arrivals">
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/footwear1.webp" alt="Footwear">
+        <h3>Classic Heeled Sandals</h3>
+        <p>₹4,299</p>
+        <button onclick="addToCart('Classic Heeled Sandals',4299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear2.webp" alt="Footwear">
+        <h3>Casual Sneakers</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Casual Sneakers',3499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear3.webp" alt="Footwear">
+        <h3>Leather Flats</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('Leather Flats',3999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear4.webp" alt="Footwear">
+        <h3>Strappy Heels</h3>
+        <p>₹4,599</p>
+        <button onclick="addToCart('Strappy Heels',4599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear5.webp" alt="Footwear">
+        <h3>Slip-On Mules</h3>
+        <p>₹3,799</p>
+        <button onclick="addToCart('Slip-On Mules',3799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear6.webp" alt="Footwear">
+        <h3>Platform Sandals</h3>
+        <p>₹4,999</p>
+        <button onclick="addToCart('Platform Sandals',4999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear7.webp" alt="Footwear">
+        <h3>Pointed Toe Flats</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Pointed Toe Flats',3499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear8.webp" alt="Footwear">
+        <h3>Classic Pumps</h3>
+        <p>₹4,799</p>
+        <button onclick="addToCart('Classic Pumps',4799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear9.webp" alt="Footwear">
+        <h3>Espadrille Wedges</h3>
+        <p>₹4,299</p>
+        <button onclick="addToCart('Espadrille Wedges',4299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear10.webp" alt="Footwear">
+        <h3>Lace-Up Boots</h3>
+        <p>₹5,499</p>
+        <button onclick="addToCart('Lace-Up Boots',5499)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear11.webp" alt="Footwear">
+        <h3>Slip-On Loafers</h3>
+        <p>₹3,999</p>
+        <button onclick="addToCart('Slip-On Loafers',3999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear12.webp" alt="Footwear">
+        <h3>Block Heel Sandals</h3>
+        <p>₹4,599</p>
+        <button onclick="addToCart('Block Heel Sandals',4599)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear13.webp" alt="Footwear">
+        <h3>Slip-On Sneakers</h3>
+        <p>₹3,299</p>
+        <button onclick="addToCart('Slip-On Sneakers',3299)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear14.webp" alt="Footwear">
+        <h3>Flat Sandals</h3>
+        <p>₹2,999</p>
+        <button onclick="addToCart('Flat Sandals',2999)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear15.webp" alt="Footwear">
+        <h3>Strappy Gladiators</h3>
+        <p>₹3,799</p>
+        <button onclick="addToCart('Strappy Gladiators',3799)">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/footwear16.webp" alt="Footwear">
+        <h3>Pastel Canvas Sneakers</h3>
+        <p>₹3,499</p>
+        <button onclick="addToCart('Pastel Canvas Sneakers',3499)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 FashionCart</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
